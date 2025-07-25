@@ -373,8 +373,7 @@ sup {
 }
 
 a {
-  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
@@ -4480,9 +4479,7 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: var(--bs-card-bg);
   background-clip: border-box;
-  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
-  border-radius: var(--bs-card-border-radius);
-  box-shadow: var(--bs-card-box-shadow);
+
 }
 .card > hr {
   margin-right: 0;
@@ -4515,7 +4512,11 @@ fieldset:disabled .btn {
 
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
-  color: var(--bs-card-title-color);
+  color: black;
+  font-size: 22px;
+  line-height: 1.1428571429;
+  letter-spacing: .007em;
+  font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .card-subtitle {

@@ -2,19 +2,17 @@ import { Container } from 'react-bootstrap'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import React from 'react'
-import HomeScreen from './screen/HomeScreen'
-
+import { Outlet } from 'react-router-dom'
 const App = () => {
   return (
     <>
       <Header />
       <main className="py-3">
         <Container>
-          <HomeScreen />
+          <Outlet />
         </Container>
       </main>
       <Footer />
-      
     </>
   )
 }
